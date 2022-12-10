@@ -10,7 +10,7 @@ const Menu = function ({ header, items, active, setActive }) {
     >
       <div className="blur" />
 
-      <div className="menu__content">
+      <div className="menu__content" onClick={e => e.stopPropagation()}>
         <div className="menu__header">{header}</div>
 
         <ul>
